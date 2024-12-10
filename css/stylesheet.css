@@ -1,0 +1,81 @@
+/* <!-- Over Ons --> */
+
+/* header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    font-style: bold;
+    background-color: #577168;
+
+}
+
+nav ul a {
+    background: #577168;
+    padding: 0.05em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    transition: all 350ms ease;
+} */
+
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEFCE;
+    color: #333;
+}
+
+header {
+    background-color: #577168;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    padding: 0.1em;
+    border-radius: 0.2em ;
+    transform: scale(2);
+}
+
+/* Hover animatie: Onderlijn die glijdt in */
+nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 100%; /* Volledige breedte van de link */
+}
